@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: python-test-app
-        image: renard17/python-test-app:2f99cb54a236a8f8c7eeac24568a3cb7564a9b8b
+        image: renard17/python-test-app:2781107cb7b41c15a8a02586974a7a0c2717d3ac
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
