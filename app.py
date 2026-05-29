@@ -8,11 +8,11 @@ class SimpleServer(BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
-            
+
             # Получаем IP адрес пода
             pod_ip = socket.gethostbyname(socket.gethostname())
-            message = f"Status: 200 OK\nPod IP: {pod_ip}\n"
-            
+            message = f"Status: 200 OK (Final)\nPod IP: {pod_ip}\n"
+
             self.wfile.write(message.encode())
         else:
             self.send_response(404)
